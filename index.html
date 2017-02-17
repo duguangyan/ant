@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>后台管理系统</title>
+<meta name="author" content="DeathGhost" /> 
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="js/layer/skin/default/layer.css"/>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body ng-app='ant'>
+<!--header-->
+<header>
+ <h1><img src="images/admin_logo1.png"/></h1>
+ <ul class="rt_nav">
+  <li><a href="#/antTaskCom" class="website_icon">代办任务</a></li>
+  <li><a href="#" class="admin_icon">个人资料</a></li>
+  <li><a href="" class="quit_icon">安全退出</a></li>
+ </ul>
+</header>
+<div class="rt_content-nav">
+	<div>
+		基础配置
+		<ul>
+			<li><a href="#/antBaseGoods">平台商品配置</a></li>
+			<li><a href="#/antBaseRole">平台角色配置</a></li>
+			<li><a href="#/antBaseDivision">平台部门管理</a></li>
+			<li><a href="#/antBaseAuthority">平台用户管理</a></li>
+			<li><a href="#/antBaseSupplier">供应商功能配置</a></li>
+			<li><a href="#/antBaseWholesale">批发部功能配置</a></li>
+			<li><a href="#/antBaseStore">门店功能配置</a></li>
+			<li><a href="#/antBaseConsume">消费者功能配置</a></li>
+			<li class="rt_content-examine">
+				<a href="#/antExamineIndex">审批流配置</a>
+				<!--<a href="javascript:void(0);">审批流配置</a>
+				<ol>
+					<li><a href="#/antExamineTer">平台审批流配置</a></li>
+					<li><a href="#/antExamineSup">供应商审批流配置</a></li>
+					<li><a href="#/antExamineWho">批发部审批流配置</a></li>
+					<li><a href="#/antExamineStore">门店审批流配置</a></li>
+				</ol>-->
+			</li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		订单管理
+		<ul>
+			<li><a href="#/antOrderTerrace">平台订单管理</a></li>
+			<li><a href="#/antOrderWholesale">批发部订单管理</a></li>
+			<li><a href="#/antOrderStore">门店订单管理</a></li>
+			<li><a href="#/antOrderCustomer">消费者订单管理</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		客服中心
+		<ul>
+			
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		广告管理
+		<ul>
+			<li><a href="#/antAdvertUsed">推送的广告信息</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		消息推送
+		<ul>
+			<li><a href="#/antNewsUsed">使用端推送消息</a></li>
+			<li><a href="#/antNewsAdmin">使用者推送消息</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		供应商管理
+		<ul>
+			<li><a href="#/antSupplierBase">供应商基础管理</a></li>
+			<li><a href="#/antSupplierFun">供应商功能详情</a></li>
+			<li><a href="#/antSupplierData">供应商商品资料</a></li>
+			<li><a href="#/antSupplierNumber">供应商账号</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		批发部管理
+		<ul>
+			<li><a href="#/antWholesaleManage">批发部分基础管理</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		门店管理
+		<ul>
+			
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		消费者管理
+		<ul>
+			
+		</ul>
+	</div>
+	<!--<div href="javscript:void(0);">
+		待办任务
+		<ul>
+			<li><a href="#/antTaskCom">平台用户未处理的代办事宜</a></li>
+			
+		</ul>
+	</div>-->
+	<div href="javscript:void(0);">
+		平台积分管理
+		<ul>
+			
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		促销管理
+		<ul>
+			<li><a href="#/antSalesSup">供应商促销管理</a></li>
+			<li><a href="#/antSalesWho">批发部促销管理</a></li>
+			<li><a href="#/antSalesStore">门店促销管理</a></li>
+		</ul>
+	</div>
+	<div href="javscript:void(0);">
+		结算中心
+		<ul>
+			<li><a href="#/antBalanceSup">供应商结算</a></li>
+			<li><a href="#/antBalanceWho">批发部结算</a></li>
+			<li><a href="#/antBalanceStore">门店结算</a></li>
+			<li><a href="#/antBalanceCur">消费者结算</a></li>
+			<li><a href="#/antBalanceTer">平台结算</a></li>
+		</ul>
+	</div>
+	<!--<div href="javscript:void(0);">
+		审批流配置
+		<ul>
+			<li><a href="#/antExamineTer">平台审批流配置</a></li>
+			<li><a href="#/antExamineSup">供应商审批流配置</a></li>
+			<li><a href="#/antExamineWho">批发部审批流配置</a></li>
+			<li><a href="#/antExamineStore">门店审批流配置</a></li>
+		</ul>
+	</div>-->
+	<div href="javscript:void(0);">
+		报表
+		<ul>
+			<li><a href="#/antFormsTer">平台报表</a></li>
+			<li><a href="#/antFormsSup">供应商报表</a></li>
+			<li><a href="#/antFormsWho">批发部报表</a></li>
+			<li><a href="#/antFormsStore">门店报表</a></li>
+			<li><a href="#/antFormsCur">消费者报表</a></li>
+			<li><a href="#/antFormsFot">足记统计</a></li>
+		</ul>
+	</div>
+	
+	</div>
+<!--aside nav-->
+<aside class="lt_aside_nav content mCustomScrollbar">
+ <h2>快速入口</h2>
+ <a><img src="images/订单.png"/><p>订单中心</p></a>
+ <a><img src="images/报表.png"/><p>报表中心</p></a>
+ <a><img src="images/结算.png"/><p>结算中心</p></a>
+</aside>
+
+<section class="rt_wrap">
+	<div ng-view></div>		
+</section>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/ant.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/antController.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/antDom.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

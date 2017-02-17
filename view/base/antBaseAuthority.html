@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平台用户管理</title>
+	</head>
+	<body>
+		<hr>
+		<h1 class="antH1">平台用户管理</h1>
+		<div class="antBaseAuthority">
+			<div>
+				<label>用户账号/工号：</label><input type="text" /> <label>用户手机：</label><input type="text" />
+			</div>
+			<div class="antBaseAuthority-seach">
+				<span style="margin-left: 20px;">所属部门：</span> 
+				<select>
+					<option value="">---请选择---</option>
+					<option value="">技术部</option>
+					<option value="">财务部</option>
+					<option value="">业务部</option>
+					<option value="">人力资源</option>
+					<option value="">采购部</option>
+					<option value="">其他部门</option>
+				</select>
+				  <label>账号状态：</label> 
+				<select>
+					<option value="">---请选择---</option>
+					<option value="">启用</option>
+					<option value="">禁用</option>
+				</select>
+				<label>登录状态：</label> 
+				<select>
+					<option value="">---请选择---</option>
+					<option value="">已登录</option>
+					<option value="">未登录</option>
+
+				</select>
+			</div>
+			<div class="antBaseAuthority-cbtn">
+				<span>重置</span>  
+				<span>搜索</span>
+			</div>
+			<div class="antBaseAuthority-list" ng-controller="antBaseAuthorityC">
+				<table>
+					<tr>
+						<th>用户账号</th>
+						<th>用户工号</th>
+						<th>密码</th>
+						<th>所属部门</th>
+						<th>所属角色</th>
+						<th>用户手机</th>
+						<th>邮箱</th>
+						<th>账号状态</th>
+						<th>登录状态</th>
+						<th>创建时间</th>
+						<th>创建人</th>
+						<th>修改时间</th>
+						<th>修改人</th>
+						<th>操作</th>
+					</tr>
+					<tr ng-repeat="x in dates">
+						<td>{{ x.cnumber }}</td>
+						<td>{{ x.jnumber }}</td>
+						<td>{{ x.pwd }}</td>
+						<td>{{ x.department }}</td>
+						<td>{{ x.role }}</td>
+						<td>{{ x.tel }}</td>
+						<td>{{ x.email }}</td>
+						<td>{{ x.zstate }}</td>
+						<td>{{ x.dstate }}</td>
+						<td>{{ x.ctime }}</td>
+						<td>{{ x.cperson }}</td>
+						<td>{{ x.xtime }}</td>
+						<td>{{ x.xperson }}</td>
+						<td><span antBaseAuthority-data="0">开启</span>&nbsp;<span>查看权限</span></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+	</body>
+</html>

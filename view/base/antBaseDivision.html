@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平台部门管理</title>
+	</head>
+	<body>
+	<hr>
+	<h1 class="antH1">平台部门管理</h1>
+	<div class="antBaseJoin antBaseDivJoin">
+		<a href="javascript:void(0);"> + 新增  </a>
+	</div>
+	<div class=".antBaseWarp"  ng-controller="antBaseDivisionC">
+		<div class="antBaseTable" >
+			<table>
+				<tr><th>部门编号</th><th>部门名称</th><th>部门描述</th><th>创建时间</th><th>创建人</th></tr>
+				<tr ng-repeat="x in dates"><td>{{ x.id }}</td><td>{{ x.name }}</td><td>{{ x.description }}</td><td>{{ x.cname }}</td><td>{{ x.ctime }}</td></tr>
+			</table>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>审批流程配置</title>
+	</head>
+	<body>
+		<hr>
+		<h1 class="antH1">审批流程配置</h1>
+		<div class="antBaseJoin antExamineIndexJoin">
+			<a href="javascript:void(0);"> + 新增  </a>
+		</div>
+		<div class="antExamineIndex" ng-controller="antExamineIndexC">
+			<table border="" cellspacing="" cellpadding="">
+				<tr>
+					<th>用户类型</th>
+					<th>功能模块</th>
+					<th>节点一审批部门</th>
+					<th>节点二审批部门</th>
+					<th>节点一审批角色</th>
+					<th>节点二审批角色</th>
+					<th>节点一审批人</th>
+					<th>节点二审批人</th>
+					<th>创建时间</th>
+					<th>创建人</th>
+					<th>修改时间</th>
+					<th>修改人</th>
+				</tr>
+				<tr ng-repeat="x in dates">
+					<td>{{x.modle}}</td>
+					<td>{{x.fn}}</td>
+					<td>{{x.secnum1}}</td>
+					<td>{{x.secnum2}}</td>
+					<td>{{x.rolnum1}}</td>
+					<td>{{x.rolnum2}}</td>
+					<td>{{x.person1}}</td>
+					<td>{{x.person2}}</td>
+					<td>{{x.ctime}}</td>
+					<td>{{x.cperson}}</td>
+					<td>{{x.xtime}}</td>
+					<td>{{x.xperson}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
